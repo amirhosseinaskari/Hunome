@@ -1,0 +1,31 @@
+{
+    "presets": [
+      "@babel/preset-env",
+      "react-app"
+    ],
+    "plugins": [
+      ["babel-plugin-root-import", 
+       {"paths": [{
+        "rootPathPrefix": "~src",
+        "rootPathSuffix": "./src/"
+      },
+      {
+        "rootPathPrefix": "~components",
+        "rootPathSuffix": "./src/components/"
+      },
+      {
+        "rootPathPrefix": "~types",
+        "rootPathSuffix": "./src/types/"
+      },
+      {
+        "rootPathPrefix": "~style-components",
+        "rootPathSuffix": "./src/shared/style-components/"
+      },
+      {
+        "rootPathPrefix": "~redux",
+        "rootPathSuffix": "./src/redux/"
+      }]
+    }
+    ]
+    ]
+  }
