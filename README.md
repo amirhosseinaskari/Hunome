@@ -39,8 +39,26 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-## Learn More
+## `My Solution Summary`
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Since we have a chain states, I preferred to use Redux and Thunk to manage them. 
+<br/>
+I can also use Saga instead of Thunk, but depending on the scale of the project, I prefer to use Thunk. 
+<br/><br/>
+For hanlding unpredictable and uncaught errors I used ErrorBoundary that in production mode it renders my custom error page instead of default react error page.
+<br/><br/>
+For having a cleaner code I used some linters and prettiers
+<br/><br/>
+For the styling, I created a dynamic component and put it in a shared folder for each of the components I thought would be used in the future.
+<br/><br/>
+For testing, I've just written two types of the test for redux and render components as an example.
+<br/><br/>
+In the CheckList component, I used useCallback to controll the re-rendering
+<br/><br/>
+Thanks <br/>
+Amir
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+
+
+
+
