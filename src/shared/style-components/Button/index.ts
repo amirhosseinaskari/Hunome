@@ -20,6 +20,7 @@ export interface ButtonProps {
 
 export const Button = styled.button<ButtonProps>`
   appearance: none;
+  padding: 6px;
   background: ${({ defaultBackColor }) => defaultBackColor || 'none'};
   width: ${({ size }) =>
     size === 'normal'

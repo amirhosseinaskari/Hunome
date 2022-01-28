@@ -2,7 +2,9 @@ import styled from 'styled-components'
 import { FlexBox } from '~src/shared/style-components/FlexBox'
 
 export const Container = styled(FlexBox).attrs({
-  direction: 'column',
+  justify: 'space-between',
+  alignItems: 'center',
 })`
-  padding: 10px;
+  height: 200px;
+  padding: 20px;
 `

@@ -1,12 +1,12 @@
-import { ICheckResult } from '~types/check-lists'
-import { checkLists } from './mock-data'
+const SONGS_API = 'https://itunes.apple.com/us/rss/topsongs/limit=30/json'
+const ALUBMS_API = 'https://itunes.apple.com/us/rss/topalbums/limit=30/json'
 
-export const fetchChecks = () => {
-  // do something to fetch data
-  return { data: { result: checkLists } }
+export const fetchAPI = async (url: string) => {
+  const result = await fetch(url)
+  return result.json()
 }
 
-export const sumitCheckResults = ({ list }: { list: ICheckResult[] }) => {
-  // do something to submit list....
-  return { data: { status: true } }
+export const requests = {
+  getSongs: () => fetchAPI(SONGS_API),
+  getAlbums: () => fetchAPI(ALUBMS_API),
 }
